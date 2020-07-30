@@ -36,8 +36,13 @@ $Grey-dark-3: #999;
     --color-grey-dark-2: #777;
     --color-grey-dark-3: #999;
     --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
+    --shadow-light: 0 2rem 5rem rgba(0, 0, 0, .06);
+    --color-red: #DC143C;
+    --line: 1px solid var(--color-grey-light-2);
 }
 
+$bp-largest: 75em; //1200/16=75em;
+$bp-large: 68.75em; //1100/16
 * {
     margin: 0;
     padding: 0;
@@ -52,6 +57,9 @@ $Grey-dark-3: #999;
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+    @media only screen and (max-width: $bp-large) {
+        font-size: 50%;
+    }
 }
 
 body {
